@@ -4,7 +4,7 @@ fun! Run()
 endfun
 
 com! Run call Run()
-nmap <silent> <leader>t :Run<CR>
+nmap <silent> <leader>tt :Run<CR>
 
 augroup Run
   autocmd!
