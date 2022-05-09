@@ -9,9 +9,8 @@ local commands = {
   ["go"] = "go run " .. path,
   ["html"] = "xdg-open " ..  path,
   ["java"] = "cd " .. dir .. " && javac " .. path .. "&& java " .. name,
-  -- ["java"] = "cd " .. dir .. " && java " .. name,
   ["javascript"] = "node " .. path,
-  ["typescript"] = "ts-node" .. path,
+  ["typescript"] = "ts-node " .. path,
   ["lua"] = "lua " .. path,
   ["perl"] = "perl " .. path,
   ["php"] = "php " .. path,
@@ -20,8 +19,8 @@ local commands = {
   ["rust"] = "cd " .. dir .. " && cargo run " .. path .. " ",
   ["sh"] = ". " .. path,
   ["swift"] = "swift " .. path,
-  --["kotlin"] = "kotlin " .. path,
-  --["cs"] = "mono " .. path,
+  ["kotlin"] = "kotlin " .. path,
+  ["cs"] = "mono " .. path,
 }
 
 return commands
